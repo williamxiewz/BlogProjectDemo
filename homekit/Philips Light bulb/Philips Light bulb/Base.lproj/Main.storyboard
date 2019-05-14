@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0Tz-Tz-p4c">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--All Homes-->
+        <scene sceneID="GOf-4l-I7E">
+            <objects>
+                <tableViewController id="lqn-7b-ZhS" customClass="ViewController" customModule="Philips_Light_bulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IPq-HM-xF8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="hMf-z3-WlE">
+                                <frame key="frameInset" minY="86" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hMf-z3-WlE" id="yI9-MG-ahS">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="aBn-hS-vh2" kind="show" identifier="showRooms" id="5gx-rm-ShB">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lqn-7b-ZhS" id="UqW-uY-imj"/>
+                            <outlet property="delegate" destination="lqn-7b-ZhS" id="q3o-b7-VRn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All Homes" id="5lk-5G-Id8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6pP-nn-Odd">
+                            <connections>
+                                <segue destination="Uts-Mt-saZ" kind="presentation" identifier="addHome" id="Zw9-M3-tEe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEQ-9G-ilm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="423"/>
+        </scene>
+        <!--Add Home-->
+        <scene sceneID="pYm-NC-Owm">
+            <objects>
+                <viewController id="5XC-Mg-4qE" customClass="AddHomeViewController" customModule="Philips_Light_bulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h7N-wN-BBt"/>
+                        <viewControllerLayoutGuide type="bottom" id="jeD-9J-62y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ikf-CJ-KDY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home Name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q0g-Ma-ohi">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="WTr-FU-jVY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q0g-Ma-ohi" firstAttribute="centerX" secondItem="Ikf-CJ-KDY" secondAttribute="centerX" id="8rv-oN-CMF"/>
+                            <constraint firstItem="q0g-Ma-ohi" firstAttribute="top" secondItem="h7N-wN-BBt" secondAttribute="bottom" constant="54" id="9ex-aa-ol6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Home" id="gyB-ID-Y7D">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xMH-wu-f2Q">
+                            <connections>
+                                <action selector="cancel:" destination="5XC-Mg-4qE" id="HOV-od-JDt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="OPv-9n-KKH">
+                            <connections>
+                                <action selector="save:" destination="5XC-Mg-4qE" id="1dl-az-H5O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="q0g-Ma-ohi" id="JwG-wA-SZX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJF-Lo-d8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QQG-ga-qwe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Tz-Tz-p4c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zjb-EU-sgg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lqn-7b-ZhS" kind="relationship" relationship="rootViewController" id="Lqa-KC-u56"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxH-4l-kz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-534" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BFF-mc-hu1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uts-Mt-saZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3sw-VR-7Ho">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5XC-Mg-4qE" kind="relationship" relationship="rootViewController" id="aIo-kc-lvy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNQ-TM-gPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="423"/>
+        </scene>
+        <!--Add Room-->
+        <scene sceneID="AwH-tn-7dJ">
+            <objects>
+                <viewController id="KT6-Dw-nHs" customClass="AddRoomViewController" customModule="Philips_Light_bulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xrr-UX-pwf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qgf-sw-G9d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kQy-Ny-tEE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUU-PY-oZw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="DfN-mZ-7rq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AUU-PY-oZw" firstAttribute="top" secondItem="Xrr-UX-pwf" secondAttribute="bottom" constant="54" id="4ZI-vv-PbK"/>
+                            <constraint firstItem="AUU-PY-oZw" firstAttribute="centerX" secondItem="kQy-Ny-tEE" secondAttribute="centerX" id="HY8-e5-CNB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Room" id="Gbn-DM-zSc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zIP-iN-Ssc">
+                            <connections>
+                                <action selector="cancel:" destination="KT6-Dw-nHs" id="jTb-hd-zgl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="OAy-Ld-WqX">
+                            <connections>
+                                <action selector="save:" destination="KT6-Dw-nHs" id="DqU-xp-zNT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="AUU-PY-oZw" id="rIP-ey-2uC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUB-xz-GAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="1184"/>
+        </scene>
+        <!--Detail Room View Controller-->
+        <scene sceneID="EJp-hS-Bd4">
+            <objects>
+                <viewController id="Ds8-pd-sFA" customClass="DetailRoomViewController" customModule="Philips_Light_bulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TT1-Mh-Fsd"/>
+                        <viewControllerLayoutGuide type="bottom" id="wdG-6Q-koa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="URc-aE-92N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="K7o-Yj-c5y">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="s5c-47-rLl"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="silderValueChanged:" destination="Ds8-pd-sFA" eventType="valueChanged" id="6Xl-Mn-OfH"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAN-sO-erE">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亮度" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkw-KM-6RM">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cvn-bc-ljz">
+                                <connections>
+                                    <action selector="switchValueChanged:" destination="Ds8-pd-sFA" eventType="valueChanged" id="hTt-gD-75f"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uos-5Q-1wJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K7o-Yj-c5y" firstAttribute="centerY" secondItem="Fkw-KM-6RM" secondAttribute="centerY" id="59o-zN-rnE"/>
+                            <constraint firstItem="K7o-Yj-c5y" firstAttribute="top" secondItem="Cvn-bc-ljz" secondAttribute="bottom" constant="125" id="GgL-Fv-TbN"/>
+                            <constraint firstAttribute="centerX" secondItem="K7o-Yj-c5y" secondAttribute="centerX" id="KYm-YB-98J"/>
+                            <constraint firstItem="Cvn-bc-ljz" firstAttribute="centerX" secondItem="URc-aE-92N" secondAttribute="centerX" id="RAV-R5-d3l"/>
+                            <constraint firstItem="sAN-sO-erE" firstAttribute="leading" secondItem="K7o-Yj-c5y" secondAttribute="trailing" constant="8" symbolic="YES" id="ZDr-dg-CFF"/>
+                            <constraint firstItem="uos-5Q-1wJ" firstAttribute="top" secondItem="TT1-Mh-Fsd" secondAttribute="bottom" constant="93" id="b6f-0H-1CD"/>
+                            <constraint firstItem="Cvn-bc-ljz" firstAttribute="centerY" secondItem="uos-5Q-1wJ" secondAttribute="centerY" id="dGF-Na-TI7"/>
+                            <constraint firstItem="K7o-Yj-c5y" firstAttribute="centerY" secondItem="sAN-sO-erE" secondAttribute="centerY" id="eGQ-eP-88P"/>
+                            <constraint firstItem="Fkw-KM-6RM" firstAttribute="baseline" secondItem="sAN-sO-erE" secondAttribute="baseline" id="fbQ-Vc-vj7"/>
+                            <constraint firstItem="Fkw-KM-6RM" firstAttribute="top" secondItem="uos-5Q-1wJ" secondAttribute="bottom" constant="134" id="hl5-FC-JgT"/>
+                            <constraint firstItem="Cvn-bc-ljz" firstAttribute="leading" secondItem="uos-5Q-1wJ" secondAttribute="trailing" constant="29" id="ii1-CY-QIB"/>
+                            <constraint firstItem="Cvn-bc-ljz" firstAttribute="top" secondItem="TT1-Mh-Fsd" secondAttribute="bottom" constant="88" id="mhK-kg-IBQ"/>
+                            <constraint firstItem="K7o-Yj-c5y" firstAttribute="leading" secondItem="Fkw-KM-6RM" secondAttribute="trailing" constant="13" id="yfe-Gh-Ovh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brightnessSilder" destination="K7o-Yj-c5y" id="xxf-mm-149"/>
+                        <outlet property="brightnessValue" destination="sAN-sO-erE" id="pWk-c1-r7m"/>
+                        <outlet property="powerSwitch" destination="Cvn-bc-ljz" id="nuv-2M-PAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70v-Jm-4nT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="1941"/>
+        </scene>
+        <!--All Rooms-->
+        <scene sceneID="3i4-19-RjO">
+            <objects>
+                <tableViewController id="aBn-hS-vh2" customClass="ListRoomsViewController" customModule="Philips_Light_bulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="d0b-HE-oZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="hac-a0-BYY">
+                                <frame key="frameInset" minY="86" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hac-a0-BYY" id="bJB-TV-s2h">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ds8-pd-sFA" kind="show" identifier="showDetailRoom" id="YuE-8z-DNW">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aBn-hS-vh2" id="jNd-le-V8w"/>
+                            <outlet property="delegate" destination="aBn-hS-vh2" id="fnf-fy-VTU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All Rooms" id="j0P-9r-JdM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yNi-pc-NcV">
+                            <connections>
+                                <segue destination="Tbz-NY-WQW" kind="presentation" identifier="addRoom" id="dcR-A6-si3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQc-80-2KC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="1184"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W1e-bf-hWF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tbz-NY-WQW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U06-Ah-x7R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KT6-Dw-nHs" kind="relationship" relationship="rootViewController" id="ZlA-mY-Scx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZg-hg-U1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="1184"/>
+        </scene>
+    </scenes>
+</document>

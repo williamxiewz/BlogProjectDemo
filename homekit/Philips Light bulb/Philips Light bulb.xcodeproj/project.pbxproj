@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ED5C8C41D59937100E4B587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5C8C31D59937100E4B587 /* AppDelegate.swift */; };
+		4ED5C8C61D59937100E4B587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5C8C51D59937100E4B587 /* ViewController.swift */; };
+		4ED5C8C91D59937100E4B587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED5C8C71D59937100E4B587 /* Main.storyboard */; };
+		4ED5C8CB1D59937100E4B587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED5C8CA1D59937100E4B587 /* Assets.xcassets */; };
+		4ED5C8CE1D59937100E4B587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED5C8CC1D59937100E4B587 /* LaunchScreen.storyboard */; };
+		4ED5C8D91D59937100E4B587 /* Philips_Light_bulbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5C8D81D59937100E4B587 /* Philips_Light_bulbTests.swift */; };
+		4ED5C8E41D59937100E4B587 /* Philips_Light_bulbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5C8E31D59937100E4B587 /* Philips_Light_bulbUITests.swift */; };
+		4ED5C8F31D59957300E4B587 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED5C8F21D59957300E4B587 /* HomeKit.framework */; };
+		4ED5C8F81D59977D00E4B587 /* DetailRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5C8F71D59977D00E4B587 /* DetailRoomViewController.swift */; };
+		4ED5C8FC1D59979900E4B587 /* AddHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5C8FB1D59979900E4B587 /* AddHomeViewController.swift */; };
+		4ED5C8FE1D59A42700E4B587 /* ListRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5C8FD1D59A42700E4B587 /* ListRoomsViewController.swift */; };
+		4ED5C9001D59A51D00E4B587 /* AddRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED5C8FF1D59A51D00E4B587 /* AddRoomViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ED5C8D51D59937100E4B587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ED5C8B81D59937100E4B587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ED5C8BF1D59937100E4B587;
+			remoteInfo = "Philips Light bulb";
+		};
+		4ED5C8E01D59937100E4B587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ED5C8B81D59937100E4B587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ED5C8BF1D59937100E4B587;
+			remoteInfo = "Philips Light bulb";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4ED5C8C01D59937100E4B587 /* Philips Light bulb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Philips Light bulb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED5C8C31D59937100E4B587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4ED5C8C51D59937100E4B587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4ED5C8C81D59937100E4B587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4ED5C8CA1D59937100E4B587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ED5C8CD1D59937100E4B587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4ED5C8CF1D59937100E4B587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED5C8D41D59937100E4B587 /* Philips Light bulbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Philips Light bulbTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED5C8D81D59937100E4B587 /* Philips_Light_bulbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Philips_Light_bulbTests.swift; sourceTree = "<group>"; };
+		4ED5C8DA1D59937100E4B587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED5C8DF1D59937100E4B587 /* Philips Light bulbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Philips Light bulbUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED5C8E31D59937100E4B587 /* Philips_Light_bulbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Philips_Light_bulbUITests.swift; sourceTree = "<group>"; };
+		4ED5C8E51D59937100E4B587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED5C8F21D59957300E4B587 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		4ED5C8F41D59957300E4B587 /* Philips Light bulb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Philips Light bulb.entitlements"; sourceTree = "<group>"; };
+		4ED5C8F71D59977D00E4B587 /* DetailRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRoomViewController.swift; sourceTree = "<group>"; };
+		4ED5C8FB1D59979900E4B587 /* AddHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHomeViewController.swift; sourceTree = "<group>"; };
+		4ED5C8FD1D59A42700E4B587 /* ListRoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRoomsViewController.swift; sourceTree = "<group>"; };
+		4ED5C8FF1D59A51D00E4B587 /* AddRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRoomViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ED5C8BD1D59937100E4B587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED5C8F31D59957300E4B587 /* HomeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED5C8D11D59937100E4B587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED5C8DC1D59937100E4B587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ED5C8B71D59937100E4B587 = {
+			isa = PBXGroup;
+			children = (
+				4ED5C8C21D59937100E4B587 /* Philips Light bulb */,
+				4ED5C8D71D59937100E4B587 /* Philips Light bulbTests */,
+				4ED5C8E21D59937100E4B587 /* Philips Light bulbUITests */,
+				4ED5C8C11D59937100E4B587 /* Products */,
+				4ED5C8F11D59957300E4B587 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4ED5C8C11D59937100E4B587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ED5C8C01D59937100E4B587 /* Philips Light bulb.app */,
+				4ED5C8D41D59937100E4B587 /* Philips Light bulbTests.xctest */,
+				4ED5C8DF1D59937100E4B587 /* Philips Light bulbUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ED5C8C21D59937100E4B587 /* Philips Light bulb */ = {
+			isa = PBXGroup;
+			children = (
+				4ED5C8F41D59957300E4B587 /* Philips Light bulb.entitlements */,
+				4ED5C8FD1D59A42700E4B587 /* ListRoomsViewController.swift */,
+				4ED5C8F71D59977D00E4B587 /* DetailRoomViewController.swift */,
+				4ED5C8FF1D59A51D00E4B587 /* AddRoomViewController.swift */,
+				4ED5C8FB1D59979900E4B587 /* AddHomeViewController.swift */,
+				4ED5C8C51D59937100E4B587 /* ViewController.swift */,
+				4ED5C8C31D59937100E4B587 /* AppDelegate.swift */,
+				4ED5C8C71D59937100E4B587 /* Main.storyboard */,
+				4ED5C8CA1D59937100E4B587 /* Assets.xcassets */,
+				4ED5C8CC1D59937100E4B587 /* LaunchScreen.storyboard */,
+				4ED5C8CF1D59937100E4B587 /* Info.plist */,
+			);
+			path = "Philips Light bulb";
+			sourceTree = "<group>";
+		};
+		4ED5C8D71D59937100E4B587 /* Philips Light bulbTests */ = {
+			isa = PBXGroup;
+			children = (
+				4ED5C8D81D59937100E4B587 /* Philips_Light_bulbTests.swift */,
+				4ED5C8DA1D59937100E4B587 /* Info.plist */,
+			);
+			path = "Philips Light bulbTests";
+			sourceTree = "<group>";
+		};
+		4ED5C8E21D59937100E4B587 /* Philips Light bulbUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4ED5C8E31D59937100E4B587 /* Philips_Light_bulbUITests.swift */,
+				4ED5C8E51D59937100E4B587 /* Info.plist */,
+			);
+			path = "Philips Light bulbUITests";
+			sourceTree = "<group>";
+		};
+		4ED5C8F11D59957300E4B587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ED5C8F21D59957300E4B587 /* HomeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ED5C8BF1D59937100E4B587 /* Philips Light bulb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED5C8E81D59937100E4B587 /* Build configuration list for PBXNativeTarget "Philips Light bulb" */;
+			buildPhases = (
+				4ED5C8BC1D59937100E4B587 /* Sources */,
+				4ED5C8BD1D59937100E4B587 /* Frameworks */,
+				4ED5C8BE1D59937100E4B587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Philips Light bulb";
+			productName = "Philips Light bulb";
+			productReference = 4ED5C8C01D59937100E4B587 /* Philips Light bulb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4ED5C8D31D59937100E4B587 /* Philips Light bulbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED5C8EB1D59937100E4B587 /* Build configuration list for PBXNativeTarget "Philips Light bulbTests" */;
+			buildPhases = (
+				4ED5C8D01D59937100E4B587 /* Sources */,
+				4ED5C8D11D59937100E4B587 /* Frameworks */,
+				4ED5C8D21D59937100E4B587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED5C8D61D59937100E4B587 /* PBXTargetDependency */,
+			);
+			name = "Philips Light bulbTests";
+			productName = "Philips Light bulbTests";
+			productReference = 4ED5C8D41D59937100E4B587 /* Philips Light bulbTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4ED5C8DE1D59937100E4B587 /* Philips Light bulbUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED5C8EE1D59937100E4B587 /* Build configuration list for PBXNativeTarget "Philips Light bulbUITests" */;
+			buildPhases = (
+				4ED5C8DB1D59937100E4B587 /* Sources */,
+				4ED5C8DC1D59937100E4B587 /* Frameworks */,
+				4ED5C8DD1D59937100E4B587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED5C8E11D59937100E4B587 /* PBXTargetDependency */,
+			);
+			name = "Philips Light bulbUITests";
+			productName = "Philips Light bulbUITests";
+			productReference = 4ED5C8DF1D59937100E4B587 /* Philips Light bulbUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ED5C8B81D59937100E4B587 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = WilliamXie;
+				TargetAttributes = {
+					4ED5C8BF1D59937100E4B587 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5NK9C68KNK;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
+					};
+					4ED5C8D31D59937100E4B587 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5NK9C68KNK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4ED5C8BF1D59937100E4B587;
+					};
+					4ED5C8DE1D59937100E4B587 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5NK9C68KNK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4ED5C8BF1D59937100E4B587;
+					};
+				};
+			};
+			buildConfigurationList = 4ED5C8BB1D59937100E4B587 /* Build configuration list for PBXProject "Philips Light bulb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4ED5C8B71D59937100E4B587;
+			productRefGroup = 4ED5C8C11D59937100E4B587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ED5C8BF1D59937100E4B587 /* Philips Light bulb */,
+				4ED5C8D31D59937100E4B587 /* Philips Light bulbTests */,
+				4ED5C8DE1D59937100E4B587 /* Philips Light bulbUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ED5C8BE1D59937100E4B587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED5C8CE1D59937100E4B587 /* LaunchScreen.storyboard in Resources */,
+				4ED5C8CB1D59937100E4B587 /* Assets.xcassets in Resources */,
+				4ED5C8C91D59937100E4B587 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED5C8D21D59937100E4B587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED5C8DD1D59937100E4B587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ED5C8BC1D59937100E4B587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED5C9001D59A51D00E4B587 /* AddRoomViewController.swift in Sources */,
+				4ED5C8F81D59977D00E4B587 /* DetailRoomViewController.swift in Sources */,
+				4ED5C8C61D59937100E4B587 /* ViewController.swift in Sources */,
+				4ED5C8FC1D59979900E4B587 /* AddHomeViewController.swift in Sources */,
+				4ED5C8C41D59937100E4B587 /* AppDelegate.swift in Sources */,
+				4ED5C8FE1D59A42700E4B587 /* ListRoomsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED5C8D01D59937100E4B587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED5C8D91D59937100E4B587 /* Philips_Light_bulbTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED5C8DB1D59937100E4B587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED5C8E41D59937100E4B587 /* Philips_Light_bulbUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ED5C8D61D59937100E4B587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ED5C8BF1D59937100E4B587 /* Philips Light bulb */;
+			targetProxy = 4ED5C8D51D59937100E4B587 /* PBXContainerItemProxy */;
+		};
+		4ED5C8E11D59937100E4B587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ED5C8BF1D59937100E4B587 /* Philips Light bulb */;
+			targetProxy = 4ED5C8E01D59937100E4B587 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4ED5C8C71D59937100E4B587 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ED5C8C81D59937100E4B587 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4ED5C8CC1D59937100E4B587 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ED5C8CD1D59937100E4B587 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4ED5C8E61D59937100E4B587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ED5C8E71D59937100E4B587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4ED5C8E91D59937100E4B587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Philips Light bulb/Philips Light bulb.entitlements";
+				DEVELOPMENT_TEAM = 5NK9C68KNK;
+				INFOPLIST_FILE = "Philips Light bulb/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.williamxie.Philips-Light-bulb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ED5C8EA1D59937100E4B587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Philips Light bulb/Philips Light bulb.entitlements";
+				DEVELOPMENT_TEAM = 5NK9C68KNK;
+				INFOPLIST_FILE = "Philips Light bulb/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.williamxie.Philips-Light-bulb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4ED5C8EC1D59937100E4B587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5NK9C68KNK;
+				INFOPLIST_FILE = "Philips Light bulbTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.williamxie.Philips-Light-bulbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Philips Light bulb.app/Philips Light bulb";
+			};
+			name = Debug;
+		};
+		4ED5C8ED1D59937100E4B587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5NK9C68KNK;
+				INFOPLIST_FILE = "Philips Light bulbTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.williamxie.Philips-Light-bulbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Philips Light bulb.app/Philips Light bulb";
+			};
+			name = Release;
+		};
+		4ED5C8EF1D59937100E4B587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5NK9C68KNK;
+				INFOPLIST_FILE = "Philips Light bulbUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.williamxie.Philips-Light-bulbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Philips Light bulb";
+			};
+			name = Debug;
+		};
+		4ED5C8F01D59937100E4B587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5NK9C68KNK;
+				INFOPLIST_FILE = "Philips Light bulbUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.williamxie.Philips-Light-bulbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Philips Light bulb";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ED5C8BB1D59937100E4B587 /* Build configuration list for PBXProject "Philips Light bulb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED5C8E61D59937100E4B587 /* Debug */,
+				4ED5C8E71D59937100E4B587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED5C8E81D59937100E4B587 /* Build configuration list for PBXNativeTarget "Philips Light bulb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED5C8E91D59937100E4B587 /* Debug */,
+				4ED5C8EA1D59937100E4B587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED5C8EB1D59937100E4B587 /* Build configuration list for PBXNativeTarget "Philips Light bulbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED5C8EC1D59937100E4B587 /* Debug */,
+				4ED5C8ED1D59937100E4B587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED5C8EE1D59937100E4B587 /* Build configuration list for PBXNativeTarget "Philips Light bulbUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED5C8EF1D59937100E4B587 /* Debug */,
+				4ED5C8F01D59937100E4B587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ED5C8B81D59937100E4B587 /* Project object */;
+}
